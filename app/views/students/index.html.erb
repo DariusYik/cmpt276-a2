@@ -18,7 +18,7 @@
 
   <tbody>
     <% @students.each do |student| %>
-      <tr>
+      <tr class="<%= cycle('oddline', 'evenline') %>">
         <td><%= student.name %></td>
         <td><%= student.gender %></td>
         <td><%= student.weight %></td>
@@ -28,7 +28,7 @@
         <td><%= student.gpa %></td>
         <td><%= link_to 'Show', student %></td>
         <td><%= link_to 'Edit', edit_student_path(student) %></td>
-        <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -37,3 +37,6 @@
 <br>
 
 <%= link_to 'New Student', new_student_path %>
+<br>
+<br>
+<%= link_to 'Display' %>

@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :gender %><br>
-    <%= f.text_field :gender %>
+    <%= f.select :gender, ["Male", "Female"] %>
   </div>
   <div class="field">
     <%= f.label :weight %><br>
@@ -29,7 +29,7 @@
   </div>
   <div class="field">
     <%= f.label :color %><br>
-    <%= f.text_field :color %>
+    <%= f.select :color, ["Black", "Blue", "Green", "Yellow", "Orange", "Purple", "Pink", "Red"] %>
   </div>
   <div class="field">
     <%= f.label :student_number %><br>

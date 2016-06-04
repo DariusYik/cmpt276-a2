@@ -2,10 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-table, {
+table {
   height: 30px;
   width: 1200px;
   border: 1px solid;
   border-color: black;
   text-align: center;
+}
+
+thead {
+  background-color: #00308f;
+  color: white;
+}
+
+.oddline {
+  background: #FEFEFA;
+}
+
+.evenline {
+  background: #FAEBD7;
 }
