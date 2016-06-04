@@ -1,8 +1,0 @@
-table, tr, td, th {
-  table-layout: fixed;
-  height: 30px;
-  width: 250px;
-  padding: 5px;
-  border: 2px solid;
-  border-color: #cccccc;
-}
