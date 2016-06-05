@@ -26,7 +26,7 @@
         <td><%= student.color %></td>
         <td><%= student.student_number %></td>
         <td><%= student.gpa %></td>
-        <td><%= link_to 'Show', student %></td>
+        <td><%= link_to 'View', student %></td>
         <td><%= link_to 'Edit', edit_student_path(student) %></td>
         <td><%= link_to 'Delete', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
@@ -39,15 +39,4 @@
 <%= link_to 'New Student', new_student_path %>
 <br>
 <br>
-<%= link_to 'Display', display_students_path %>
-<br>
-<br>
-
-<% @students.each do |student| %>
-  <div class="div_box" style="width:<%=student.weight%>px; height:<%=student.height%>px;">
-    <p class="s_box" style="color:<%=student.color%>"><%= student.name %></p>
-    <p class="s_box"><%= student.gender %></p>
-    <p class="s_box"><%= student.student_number %></p>
-    <p class="s_box"><%= student.gpa %></p>
-  </div>
-<% end %>
+<%= link_to 'Display', {:controller => 'students', :action => 'display'}%>

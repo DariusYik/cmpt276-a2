@@ -13,7 +13,7 @@ class StudentsController < ApplicationController
   end
 
   def display
-    render :template => "display"
+    @students = Student.all
   end
   # GET /students/new
   def new

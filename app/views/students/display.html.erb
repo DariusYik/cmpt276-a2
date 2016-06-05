@@ -1,3 +1,13 @@
-<p id="display"><%= Display %></p>
+<h1>Displaying All Students</h1>
 
-<h1>Hello World!</h1>
+<% @students.each do |student| %>
+  <div class="div_box" style="width:<%=student.weight%>px; height:<%=student.height%>px;">
+    <p class="s_box" style="color:<%=student.color%>"><%= student.name %></p>
+    <p class="s_box"><%= student.gender %></p>
+    <p class="s_box"><%= student.student_number %></p>
+    <p class="s_box"><%= student.gpa %></p>
+  </div>
+<% end %>
+
+<br>
+<%= link_to 'Back', students_path %>
