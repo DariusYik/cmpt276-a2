@@ -12,6 +12,7 @@ class StudentsController < ApplicationController
   def show
   end
 
+  # GET /students/display
   def display
     @students = Student.all
   end

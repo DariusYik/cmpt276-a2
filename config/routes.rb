@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
-  #resources :students
 
+  # Creating path to display webpage
   get "students/display" => 'students#display'
-
-  #get 'students/display' #=> "students#display", :as => :display_students
 
   resources :students do
     member do
