@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
-  resources :students do
-    member do
-      get 'display'
-    end
-  end
+  resources :students
+
+  get 'students/display' => "students#display", :as => :display_students
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

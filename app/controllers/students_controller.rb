@@ -12,6 +12,9 @@ class StudentsController < ApplicationController
   def show
   end
 
+  def display
+    render :template => "display"
+  end
   # GET /students/new
   def new
     @student = Student.new
@@ -59,10 +62,6 @@ class StudentsController < ApplicationController
       format.html { redirect_to students_url, notice: 'Student was successfully destroyed.' }
       format.json { head :no_content }
     end
-  end
-
-  def display
-    @students = Student.all
   end
 
   private

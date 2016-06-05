@@ -18,14 +18,14 @@ ActiveRecord::Schema.define(version: 20160604174647) do
 
   create_table "students", force: :cascade do |t|
     t.string   "name"
-    t.string   "gender"
     t.integer  "weight"
     t.integer  "height"
     t.string   "color"
     t.integer  "student_number"
-    t.integer  "gpa"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+    t.float    "gpa"
+    t.string   "gender"
   end
 
   create_table "users", force: :cascade do |t|

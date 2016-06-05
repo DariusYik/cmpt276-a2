@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Students</h1>
+<h1>Students Database</h1>
 
 <table>
   <thead>
@@ -39,4 +39,15 @@
 <%= link_to 'New Student', new_student_path %>
 <br>
 <br>
-<%= link_to 'Display' %>
+<%= link_to 'Display', display_students_path %>
+<br>
+<br>
+
+<% @students.each do |student| %>
+  <div class="div_box" style="width:<%=student.weight%>px; height:<%=student.height%>px;">
+    <p class="s_box" style="color:<%=student.color%>"><%= student.name %></p>
+    <p class="s_box"><%= student.gender %></p>
+    <p class="s_box"><%= student.student_number %></p>
+    <p class="s_box"><%= student.gpa %></p>
+  </div>
+<% end %>

@@ -20,11 +20,11 @@
     <%= f.select :gender, ["Male", "Female"] %>
   </div>
   <div class="field">
-    <%= f.label :weight %><br>
+    <%= f.label("Weight in Pounds") %><br>
     <%= f.number_field :weight %>
   </div>
   <div class="field">
-    <%= f.label :height %><br>
+    <%= f.label("Height in CM") %><br>
     <%= f.number_field :height %>
   </div>
   <div class="field">
@@ -37,7 +37,7 @@
   </div>
   <div class="field">
     <%= f.label :gpa %><br>
-    <%= f.number_field :gpa %>
+    <%= f.text_field :gpa %>
   </div>
   <div class="actions">
     <%= f.submit %>
