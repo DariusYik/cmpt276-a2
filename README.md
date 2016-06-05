@@ -8,13 +8,13 @@ UI Mockup Link: https://github.com/grimtekk/cmpt276-a2/blob/master/CMPT276%20A2%
 
 ###Features:
 1. The different attributes that a student can have are:
-  * Name
-  * Gender: Can only choose either "Male" or "Female"
-  * Weight: Measured in Pounds, with maximum 3 number limit
-  * Height: Measured in cm, with maximum 3 number limit
-  * Color: Can only choose "Black", "Blue", "Green", "Yellow", "Orange", "Purple", "Pink", or "Red"
-  * Student Number: Must put in a 9 digit number, same as a SFU student number
-  * GPA
+  * **Name**
+  * **Gender:** Can only choose either "Male" or "Female"
+  * **Weight:** Measured in Pounds, with maximum 3 number limit
+  * **Height:** Measured in cm, with maximum 3 number limit
+  * **Color:** Can only choose "Black", "Blue", "Green", "Yellow", "Orange", "Purple", "Pink", or "Red"
+  * **Student Number:** Must put in a 9 digit number, same as a SFU student number
+  * **GPA**
 
 2. When adding a new student to the database, or editing a student, all attributes must be filled in or an error message will pop up preventing you from continuing.  
 
